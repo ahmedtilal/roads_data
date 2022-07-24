@@ -1,6 +1,9 @@
 import requests, json
 import pandas as pd
 
+# This file fetches the data from the Transport for London API(Tfl).
+# Found at https://api-portal.tfl.gov.uk/apis.
+
 def get_json_data(url: str) -> list[dict] | bool:
     """
     Fetches the json string from the API endpoint.

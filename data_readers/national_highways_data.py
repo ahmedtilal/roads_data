@@ -3,6 +3,10 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import requests
 
+# This file fetches the data from National Highways Planned Road Works datasets at https://data.gov.uk.
+# The dataset is called 'Planned road works on the National Highways road network'.
+# Found at https://www.data.gov.uk/dataset/5b3267d8-4307-4eef-a9af-3a4c28224694/planned-road-works-on-the-national-highways-road-network.
+
 
 def get_df_from_xml_url(url: str) -> pd.DataFrame:
     """
