@@ -9,6 +9,7 @@ requests = "*"
 ipykernel = "*"
 openpyxl = "*"
 pylint = "*"
+selenium = "*"
 
 [dev-packages]
 black = "*"
