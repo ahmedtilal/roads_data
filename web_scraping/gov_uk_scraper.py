@@ -12,7 +12,7 @@ def get_current_links() -> list[str]:
     Returns:
         list[str]: list of file links in AWS S3.
     """
-    pwd = os.path.abspath(os.path.join(os.pardir))
+    pwd = os.path.abspath(os.path.join(os.getcwd()))
     chrome_dir = os.path.join(pwd, "chrome_driver")
     driver_path = os.path.join(chrome_dir, 'chromedriver.exe')
     driver = webdriver.Chrome(service=Service(driver_path))
