@@ -17,7 +17,7 @@ def get_df_from_xml_url(url: str) -> pd.DataFrame:
 
     Returns:
         DataFrame: Dataframe containing the fetched data.
-    """    
+    """
     response = requests.get(url)
     tree = ET.ElementTree(ET.fromstring(response.content))
     root = tree.getroot()

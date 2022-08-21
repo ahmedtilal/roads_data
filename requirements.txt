@@ -1,0 +1,4 @@
+requests
+apache-airflow[docker,pandas]
+xlsxwriter
+selenium
