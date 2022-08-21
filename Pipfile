@@ -4,15 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pandas = "*"
 requests = "*"
-ipykernel = "*"
-openpyxl = "*"
-pylint = "*"
-selenium = "*"
+apache-airflow = {extras = ["docker", "pandas"], version = "*"}
+xlsxwriter = "*"
 
 [dev-packages]
 black = "*"
+pylint = "*"
+selenium = "*"
+pandas = "*"
+ipykernel = "*"
 
 [requires]
 python_version = "3.10"

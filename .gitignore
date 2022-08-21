@@ -1,2 +1,6 @@
 *.xml
 *.xlsx
+.env
+logs/
+__pycache__/
+*.pyc
