@@ -28,7 +28,7 @@ def nhrn_etl():
         auto_remove=True,
         docker_url='tcp://docker-proxy:2375',
     )
-        
+
 
     @task()
     def transform():

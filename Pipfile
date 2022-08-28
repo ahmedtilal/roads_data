@@ -4,9 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
-apache-airflow = {extras = ["docker", "pandas"], version = "*"}
-xlsxwriter = "*"
+requests = "==2.28.1"
+xlsxwriter = "==3.0.3"
+selenium = "==4.4.3"
+pytest = "==7.1.2"
+apache-airflow = {version = "==2.3.4", extras = ["docker", "pandas", "postgresql"]}
 
 [dev-packages]
 black = "*"
