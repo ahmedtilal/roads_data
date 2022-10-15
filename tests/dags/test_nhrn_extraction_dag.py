@@ -1,17 +1,17 @@
 import pytest
 
-# from airflow.models.dagbag import DagBag
+from airflow.models.dagbag import DagBag
 
 
-# @pytest.fixture()
-# def dagbag():
-#     return DagBag(include_examples=False)
+@pytest.fixture()
+def dagbag():
+    return DagBag(include_examples=False)
 
-# def test_dag_loaded(dagbag):
-#     dag = dagbag.get_dag(dag_id="nhrn_extraction_dag")
-#     assert dagbag.import_errors == {}
-#     assert dag is not None
-#     assert len(dag.tasks) == 3
+def test_dag_loaded(dagbag):
+    dag = dagbag.get_dag(dag_id="nhrn_etl")
+    assert dagbag.import_errors == {}
+    assert dag is not None
+    assert len(dag.tasks) == 3
     
 
     

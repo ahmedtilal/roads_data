@@ -5,7 +5,7 @@ import pytest
 os.environ["AIRFLOW__CORE__LOAD_DEFAULT_CONNECTIONS"] = "False"  # Don't want anything to "magically" work
 os.environ["AIRFLOW__CORE__LOAD_EXAMPLES"] = "False"  # Don't want anything to "magically" work
 os.environ["AIRFLOW__CORE__EXECUTOR"] = "SequentialExecutor"
-os.environ["AIRFLOW__DATABASE__SQL_ALCHEMY_CONN"] = "sqlite:///mnt/c/Users/ahmed/Planned Road Works Project/unittests.db"
+os.environ["AIRFLOW__DATABASE__SQL_ALCHEMY_CONN"] = "sqlite:////home/ahmed/roads_data/unittests.db"
 os.environ["AIRFLOW__API__AUTH_BACKENDS"] = ""
 os.environ["AIRFLOW__CORE__UNIT_TEST_MODE"] = "True"  # Set default test settings, skip certain actions, etc.
 os.environ["AIRFLOW__API__AUTH_BACKENDS"] = "airflow.api.auth.backend.session"
